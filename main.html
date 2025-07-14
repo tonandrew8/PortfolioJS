@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew's Porfolio Website</title>
+    <noscript>Please Enable Javascript</noscript>
+
+    <style>
+      one-piece-pack {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+        /* mimic a booster-pack wrapper */
+        background: linear-gradient(135deg, #ffcb05 0%, #3b4cca 100%);
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        max-width: 800px;
+        margin: 2rem auto;
+      }
+      one-piece-pack img {
+        width: 100%;
+        display: block;
+        border-radius: 0.75rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      /* little hover “flip” effect for flair */
+      one-piece-pack img:hover {
+        transform: perspective(300px) rotateY(10deg) scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+
+    <link rel="icon" href="LuffyHero.png" type="image/x-icon" />
+  </head>
+  <body>
+    <hello-world></hello-world>
+    <header>
+      <nav>
+        <ul>
+          <li><a>Portfolio</a></li>
+          <li><a> About me </a></li>
+          <li><a> Projects </a></li>
+          <li><a> Contact Me </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="landing">
+        <h1>
+          Hey <i>I'm Andrew</i> I am studying
+          <strong>Computer Science at UCSD</strong>
+        </h1>
+        <small
+          >I am looking to be a
+          <dfn title="Software engineer who writes code to develop products"
+            >softeware engineer</dfn
+          ></small
+        >
+        <button>Get in Touch with Me</button>
+        <picture>
+          <source srcset="LuffyHero.png" media="(max-width: 480px)" />
+          <source srcset="LuffyHero.png" media="(min-width: 481px)" />
+          <img
+            src="LuffyHero.png"
+            alt="Hero image showing our product in use"
+            loading="lazy"
+            width="400"
+          />
+        </picture>
+        <br />
+        <p>
+          <small
+            >Hit <kbd>G</kbd> then <kbd>P</kbd> to jump to the Projects
+            section.</small
+          >
+        </p>
+      </section>
+
+      <hr />
+
+      <section class="about">
+        <hgroup>
+          <h2>About Me</h2>
+          <h3>My Interests and More</h3>
+        </hgroup>
+        <p>
+          <em>
+            Something about me is that I really enjoy Card Games!
+            <br />
+            My favorite is the <b>One Piece</b> TCG game!
+          </em>
+        </p>
+        <pre>
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+          ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⠀⠀⠀⢠⣾⣧⣤⡖⠀⠀⠀⠀⠀⠀⠀
+          ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠋⠀⠉⠀⢄⣸⣿⣿⣿⣿⣿⣥⡤⢶⣿⣦⣀⡀
+          ⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡆⠀⠀⠀⣙⣛⣿⣿⣿⣿⡏⠀⠀⣀⣿⣿⣿⡟
+          ⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⠷⣦⣤⣤⣬⣽⣿⣿⣿⣿⣿⣿⣿⣟⠛⠿⠋⠀
+          ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠋⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⡆⠀⠀
+          ⠀⠀⠀⠀⣠⣶⣶⣶⣿⣦⡀⠘⣿⣿⣿⣿⣿⣿⣿⣿⠿⠋⠈⢹⡏⠁⠀⠀
+          ⠀⠀⠀⢀⣿⡏⠉⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡆⠀⢀⣿⡇⠀⠀⠀
+          ⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣟⡘⣿⣿⣃⠀⠀⠀
+          ⣴⣷⣀⣸⣿⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⠹⣿⣯⣤⣾⠏⠉⠉⠉⠙⠢⠀
+          ⠈⠙⢿⣿⡟⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣄⠛⠉⢩⣷⣴⡆⠀⠀⠀⠀⠀
+          ⠀⠀⠀⠋⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣀⡠⠋⠈⢿⣇⠀⠀⠀⠀⠀
+          ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        </pre>
+        <canvas id="onePieceCanvas" width="400" height="250"></canvas>
+        <svg width="100" height="100">
+          Sorry, your browser does not support inline SVG.
+        </svg>
+        <h3>This is one of my favorite sound tracks from the show!</h3>
+        <audio controls src="OPsound.mp3" type="audio/mp4">
+          Your browser does not support the audio element.
+        </audio>
+        <h3>
+          I also enjoy watching the NBA. Here is a shot from one of my favorite
+          basketball players
+        </h3>
+        <video src="nba.mp4" controls>
+          Your browser does not support HTML5 video.
+        </video>
+
+        <aside>
+          <p>Stephan Curry shoots an iconic 3 pointer to win the game!</p>
+        </aside>
+
+        <hr />
+
+        <section class="hobbies">
+          <h2>My Hobbies</h2>
+          <dl>
+            <dt>One Piece Collection</dt>
+            <dd>
+              I collect One Piece and Pokemon TCG cards—especially rare
+              holographics and full-art cards.
+            </dd>
+            <dt>Current Favorite Card</dt>
+            <dd>
+              <figure>
+                <img
+                  src="OPDodger.png"
+                  alt="Scarlet & Violet—Paldea Evolved booster pack"
+                  width="200"
+                />
+                <figcaption>One Piece Dodger Luffy Collab</figcaption>
+              </figure>
+            </dd>
+            <dt>Deck Building</dt>
+            <dd>
+              I’m currently play Purple Luffy which is an aggresive deck that
+              requires sacrificing your own life for an advantage
+            </dd>
+          </dl>
+
+          <hr />
+
+          <section class="collection">
+            <h2>Card Collection</h2>
+            <label for="card"></label>
+            <select name="card" id="card">
+              <optgroup label="Javascript">
+                <option value="react">One Piece</option>
+                <option value="vue">Pokemon</option>
+              </optgroup>
+            </select>
+            <h3>My One Piece Card Collection Favorites</h3>
+            <one-piece-pack>
+              <img src="LuffyLeader.png" alt="Pikachu card" />
+              <img src="DoffyImg.png" alt="Charizard card" />
+              <img src="teachImg.png" alt="Bulbasaur card" />
+              <img src="zoroImg.png" alt="Mewtwo card" />
+            </one-piece-pack>
+            <details>
+              <summary>Card Facts</summary>
+              <p>
+                Some cards are rarer than others. The card on the right is worth
+                over $800!
+              </p>
+            </details>
+            <h4>Here are my most played decks</h4>
+            <ol>
+              <li>Purple Luffy</li>
+              <li>Blue DoFlamingo</li>
+              <li>Black BlackBeard</li>
+              <li>Red/Yellow Betty</li>
+            </ol>
+          </section>
+        </section>
+      </section>
+      <hr />
+
+      <section class="school">
+        <h2>School Information</h2>
+        <h3>Univeristy of California, San Diego</h3>
+        <code>
+          <abbr title="University of California, San Diego">UCSD</abbr>
+        </code>
+        <table>
+          <caption>
+            Education &amp; Training
+          </caption>
+
+          <colgroup>
+            <col span="1" style="width: 30%" />
+            <col span="1" style="width: 30%" />
+            <col span="1" style="width: 20%" />
+            <col span="1" style="width: 20%" />
+          </colgroup>
+
+          <thead>
+            <tr>
+              <th scope="col">Institution</th>
+              <th scope="col">Degree / Certification</th>
+              <th scope="col">Years</th>
+              <th scope="col">Location</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>UC San Diego</td>
+              <td>B.S. Computer Science</td>
+              <td>2017–2021</td>
+              <td>La Jolla, CA</td>
+            </tr>
+            <tr>
+              <td>FreeCodeCamp</td>
+              <td>Full-Stack Certification</td>
+              <td>2022</td>
+              <td>Online</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="4">Last updated: July 2025</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.642672811886!2d-117.2369300596895!3d32.88117247876535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc06c4414caf4f%3A0xefb6aafc89913ea7!2sUniversity%20of%20California%20San%20Diego!5e0!3m2!1sen!2sus!4v1752458893622!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <input list="project-tech" placeholder="Filter by tech…" />
+        <datalist id="project-tech">
+          <option value="React"></option>
+          <option value="Node.js"></option>
+          <option value="GraphQL"></option>
+          <option value="Prisma"></option>
+          <option value="Tailwind CSS"></option>
+        </datalist>
+
+        <template>
+          <article class="project-card">
+            <span>React</span>
+            <progress value="80" max="100">80%</progress>
+
+            <span>HTML</span>
+            <progress value="80" max="100">40%</progress>
+
+            <span>CSS</span>
+            <progress value="80" max="100">60%</progress>
+
+            <header>
+              <h2>Real-Time Chat App</h2>
+              <p class="meta">July 2025 — Full-Stack, WebSockets, Next.js</p>
+            </header>
+
+            <figure>
+              <img src="LuffyLeader.png" alt="Chat interface" />
+              <figcaption>
+                Live chat UI with user avatars and message threads.
+              </figcaption>
+            </figure>
+
+            <section>
+              <h3>Overview</h3>
+              <p>This app lets users chat in real time…</p>
+            </section>
+
+            <section>
+              <h3>Tech Stack</h3>
+              <ul>
+                <li>Next.<abbr title="JavaScript">JS</abbr> / React</li>
+                <li>
+                  Socket.<abbr title="Input/Output">IO</abbr> on Node.<abbr
+                    title="JavaScript"
+                    >JS</abbr
+                  >
+                </li>
+                <li>
+                  Postgre<abbr title="Structured Query Language">SQL</abbr> +
+                  Prisma
+                </li>
+              </ul>
+            </section>
+
+            <footer>
+              <a href="/projects/chat-app">View Live Project →</a>
+            </footer>
+          </article>
+        </template>
+      </section>
+      <hr />
+
+      <section class="contact">
+        <h2>Contact</h2>
+
+        <form action="/contact" method="post">
+          <fieldset>
+            <legend>Contact Me</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="purpose">Purpose</label>
+            <input type="text" id="purpose" name="purpose" />
+            <button type="submit">Send Message</button>
+          </fieldset>
+        </form>
+
+        <button id="openContact">Contact Me</button>
+        <dialog id="contactDialog"></dialog>
+
+        <label for="message">Your Message</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Tell me what you are working on..."
+        ></textarea>
+      </section>
+
+      <section class="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote cite="https://techjournal.com/andrew-interview">
+          <p>
+            “One of the most promising young developers in the React ecosystem.”
+          </p>
+          <footer>
+            —
+            <cite
+              ><a href="https://techjournal.com/andrew-interview"
+                >Tech Journal</a
+              ></cite
+            >
+          </footer>
+        </blockquote>
+      </section>
+
+      <section class="updates">
+        <h2>Website Updates</h2>
+        <ins
+          datetime="2025-07-13T17:00:00Z"
+          cite="https://your-portfolio.com/updates"
+        >
+          Redesigned project gallery with filter controls
+        </ins>
+        <br />
+        <del
+          datetime="2025-07-14T10:00:00Z"
+          cite="https://your-portfolio.com/changelog"
+        >
+          Removed outdated “Workshop Schedule” section
+        </del>
+      </section>
+
+      <section class="search-updates">
+        <search>
+          <form action="/search">
+            <label for="movie">Find an update</label>
+            <input type="search" id="updates" name="updates" />
+            <button type="submit">Search</button>
+          </form>
+        </search>
+        <div id="results"></div>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <address>
+        <strong>Andrew Portfolio</strong><br />
+        <p>andrew@portfolio.com</p>
+        <br />
+        <p>+1 (415) 123-4567</p>
+        <br />
+        San Diego, CA
+      </address>
+    </footer>
+  </body>
+
+  <script>
+    class HelloWorld extends HTMLElement {
+      connectedCallback() {
+        console.log("Hello world!");
+      }
+    }
+    customElements.define("hello-world", HelloWorld);
+    const ctx = document.getElementById("onePieceCanvas").getContext("2d");
+    const grd = ctx.createLinearGradient(0, 0, 400, 0);
+    grd.addColorStop(0, "#FF5F6D");
+    grd.addColorStop(1, "#FFC371");
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, 400, 250);
+  </script>
+</html>
