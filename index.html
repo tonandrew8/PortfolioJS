@@ -20,6 +20,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#tech">Technologies</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -322,6 +323,45 @@
             </ul>
           </section>
         </section>
+      </section>
+
+      <section id="contact">
+        <form action="https://httpbin.org/post" method="POST">
+          <h2>Contact</h2>
+          <label for="name">Name <span>*</span></label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="email">Email </label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="comments">Comment <span>*</span></label>
+          <textarea
+            required
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="40"
+            placeholder="Enter your comments here..."
+            required
+            maxlength="200"
+          ></textarea>
+
+          <label for="phone">Phone Number <span>*</span></label>
+          <input type="text" name="phone" id="phone" />
+
+          <input
+            type="text"
+            id="possible_bot"
+            name="possible_bot"
+            value="true"
+            hidden
+          />
+
+          <button type="submit">Submit</button>
+
+          <output name="error" for="name email comments"></output>
+          <output name="info"></output>
+        </form>
       </section>
     </main>
 

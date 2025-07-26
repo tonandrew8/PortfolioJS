@@ -391,37 +391,38 @@ section {
 }
 
 #contact form {
-  background: #fff;
-  padding: var(--space);
-  border-radius: var(--radius);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin-bottom: var(--space);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10rem 10rem;
+  border-radius: 3rem;
+  justify-content: space-between;
 }
+
+#contact h2 {
+  color: black;
+}
+
 #contact label {
-  display: block;
-  margin: var(--space, 2rem);
+  text-align: left;
+  color: black;
 }
-#contact input,
-#contact textarea,
+
+#contact input {
+  margin-bottom: 1rem;
+}
+
+*:required {
+  border: 1px solid red;
+}
+
 #contact button {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: var(--space);
-  border: 1px solid #ccc;
-  border-radius: var(--radius);
-}
-#contact button {
-  background-color: var(--color-primary);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background var(--transition-speed),
-    transform var(--transition-speed);
-}
-#contact button:hover {
-  background-color: var(--color-secondary);
-  transform: translateY(-2px);
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 1rem 2rem 1rem 2rem;
+  border: 2px solid black;
+  border-radius: 1rem;
 }
 
 footer {
