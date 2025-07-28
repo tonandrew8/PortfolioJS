@@ -27,7 +27,7 @@
   --radius: 0.5rem;
 }
 
-.lightmode {
+.light_theme {
   --color-primary: #3b6c92;
   --color-secondary: #5d8cab;
   --color-accent: #78a6c8;
@@ -35,6 +35,35 @@
   --bg-dark: #94b6cc;
   --text-dark: #27496d;
   --text-light: #1e2f40;
+}
+
+.jungle_theme {
+  --color-primary: #1a4d2e;
+  --color-secondary: #4f6f52;
+  --color-accent: #a4be7b;
+  --bg-light: #d2e3c8;
+  --bg-dark: #618264;
+  --text-dark: #0b3d20;
+  --text-light: #1d4527;
+}
+
+.fire_theme {
+  --color-primary: #b42b2b;
+  --color-secondary: #e94f37;
+  --color-accent: #ff8552;
+  --bg-light: #ffd6c0;
+  --bg-dark: #8c1c13;
+  --text-dark: #4a0e0e;
+  --text-light: #591e1e;
+}
+.sand_theme {
+  --color-primary: #c2b280;
+  --color-secondary: #e0cda9;
+  --color-accent: #d9b382;
+  --bg-light: #fff8dc;
+  --bg-dark: #d2b48c;
+  --text-dark: #6b4c1e;
+  --text-light: #846c3f;
 }
 
 * {
